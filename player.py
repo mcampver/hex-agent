@@ -201,7 +201,7 @@ class Node:
 class HexPlayer(Player):
     def __init__(self, player_id: int):
         super().__init__(player_id)
-        self.tiempo_limite = 1.9  # Un poco menos para evitar timeouts
+        self.tiempo_limite = 10  # Un poco menos para evitar timeouts
         self.oponente = 3 - player_id
         self.libro_aperturas = self._crear_libro_aperturas()
         self.patrones_observados = []  # Para seguimiento de jugadas del oponente
